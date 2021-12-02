@@ -1,0 +1,7 @@
+C:\Users\vinso\Documents\B1C2\inleveropdracht 1\inleveropdracht 1\bin\Debug\inleveropdracht 1.exe.config
+C:\Users\vinso\Documents\B1C2\inleveropdracht 1\inleveropdracht 1\bin\Debug\inleveropdracht 1.exe
+C:\Users\vinso\Documents\B1C2\inleveropdracht 1\inleveropdracht 1\bin\Debug\inleveropdracht 1.pdb
+C:\Users\vinso\Documents\B1C2\inleveropdracht 1\inleveropdracht 1\obj\Debug\inleveropdracht 1.csproj.AssemblyReference.cache
+C:\Users\vinso\Documents\B1C2\inleveropdracht 1\inleveropdracht 1\obj\Debug\inleveropdracht 1.csproj.CoreCompileInputs.cache
+C:\Users\vinso\Documents\B1C2\inleveropdracht 1\inleveropdracht 1\obj\Debug\inleveropdracht 1.exe
+C:\Users\vinso\Documents\B1C2\inleveropdracht 1\inleveropdracht 1\obj\Debug\inleveropdracht 1.pdb
