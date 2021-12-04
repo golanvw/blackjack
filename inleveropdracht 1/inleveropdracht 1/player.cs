@@ -15,14 +15,6 @@ namespace inleveropdracht_1
         public void TakeCard(List<card> deck, bool isVisible)
         {
 
-
         }
-
-
-
-
-
-
-
     }
 }
