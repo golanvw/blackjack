@@ -8,6 +8,8 @@ namespace inleveropdracht_1
 {
     class blackjack
     {
-        //public table table;
+        public table table;
+        
+        public void StartGame();
     }
 }
