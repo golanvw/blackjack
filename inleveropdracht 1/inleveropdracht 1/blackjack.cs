@@ -10,7 +10,7 @@ namespace inleveropdracht_1
     {
         public table table;
         
-        public void StartGame();
+        public void StartGame()
         
         private void DealCards(List<card>)
     }
