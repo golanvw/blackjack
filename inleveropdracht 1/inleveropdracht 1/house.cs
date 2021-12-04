@@ -8,5 +8,6 @@ namespace inleveropdracht_1
 {
     class house
     {
+        public RevealTurnedCards()
     }
 }
