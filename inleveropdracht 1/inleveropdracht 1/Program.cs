@@ -10,41 +10,64 @@ namespace inleveropdracht_1
     {
         static void Main(string[] args)
         {
+         int v = 1;
+            int w = 2;
+            int q = 3;
+            int s = 4;
+            string naam1;
+            string naam2;
+            string naam3;
+            string naam4;
 
-            int spelers;
-            Console.WriteLine("aantal spelers:");
-            spelers = Int32.Parse(Console.ReadLine());
-            //Console.WriteLine("aantal spelers is " + spelers);
+            naam1 = string.Format(Console.ReadLine());
+            naam2 = string.Format(Console.ReadLine());
+            naam3 = string.Format(Console.ReadLine());
+            naam4 = string.Format(Console.ReadLine());
 
-            int kaarten;
-            Console.WriteLine("aantal kaarten per spelers:");
-            kaarten = Int32.Parse(Console.ReadLine());
-            //string kaarten = Console.ReadLine();
-            //Console.WriteLine("aantal kaarten:" + kaarten);
-
-            int v = 1;
             if (spelers == v)
-            Console.Write("naam speler 1:" );
+            {
+               
+                Console.WriteLine("naam speler 1:");
+                naam1 = string.Format(Console.ReadLine());
+             
+               
+
+            }
+           
+            else if (spelers == w)
+            {
+                Console.WriteLine("naam speler 1: ");
+                naam1 = string.Format(Console.ReadLine());
+                Console.WriteLine("naam speler 2: ");
+                naam2 = string.Format(Console.ReadLine());
+               
 
 
-            //Console.WriteLine("naam speler 2:");
-            //Console.WriteLine("naam speler 3:");
-            //Console.WriteLine("naam speler 4:");
+            }
+             
+            if(spelers == q)
+            {
+                Console.WriteLine("naam speler 1:");
+                naam1 = string.Format(Console.ReadLine());
+                Console.WriteLine("naam speler 2:");
+                naam2 = string.Format(Console.ReadLine());
+                Console.WriteLine("naam speler 3:");
+                naam3 = string.Format(Console.ReadLine());
 
-            Console.WriteLine("wat is uw inzet:");
-            string inzet = Console.ReadLine();
-            Console.WriteLine("inzet:" + inzet);
+            }
+         
 
-            
-                        
-            //string vier = "aantal spelers";
-            //Console.Write("\n" + vier);
-            //string vijf = "aantal kaarten";
-            //Console.Write("\n"+ vijf); 
-
-
-
-            Console.ReadLine();
+            if (spelers == s )
+            {
+                Console.WriteLine("naam speler 1:");
+                naam1 = string.Format(Console.ReadLine());
+                Console.WriteLine("naam speler 2:");
+                naam2 = string.Format(Console.ReadLine());
+                Console.WriteLine("naam speler 3:");
+                naam3 = string.Format(Console.ReadLine());
+                Console.WriteLine("naam speler 4:");
+                naam4 = string.Format(Console.ReadLine());
+            }
         }
     }
 }
