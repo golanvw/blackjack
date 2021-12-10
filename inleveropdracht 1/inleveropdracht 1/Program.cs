@@ -27,6 +27,7 @@ namespace inleveropdracht_1
             string keuze;
             int dubbel;
             string doorgaan;
+            int spelerswaarde;
 
             Console.WriteLine("aantal spelers:");
             spelers = Int32.Parse(Console.ReadLine());
@@ -43,6 +44,7 @@ namespace inleveropdracht_1
             {
                 do
                 {
+                    spelerswaarde = 0;
                     Console.WriteLine("naam speler 1:");
                     naam1 = string.Format(Console.ReadLine());
                     Console.WriteLine("inzet speler 1:");
@@ -52,7 +54,7 @@ namespace inleveropdracht_1
                     Console.Write("inzet speler 1: " + inzet1);
                     Console.WriteLine("wil je nog eens spelen? (y/n)");
                     doorgaan = string.Format(Console.ReadLine());
-                } while (doorgaan == "y");
+                } while (doorgaan == "y" || spelerswaarde < 21);
 
 
             }
@@ -61,6 +63,7 @@ namespace inleveropdracht_1
             {
                 do
                 {
+                    spelerswaarde = 0;
                     Console.WriteLine("naam speler 1: ");
                     naam1 = string.Format(Console.ReadLine());
                     Console.WriteLine("naam speler 2: ");
@@ -77,13 +80,14 @@ namespace inleveropdracht_1
                     Console.Write("inzet speler 2: " + inzet2);
                     Console.WriteLine("wil je nog eens spelen? (y/n)");
                     doorgaan = string.Format(Console.ReadLine());
-                } while (doorgaan == "y");
+                } while (doorgaan == "y" || spelerswaarde < 21);
             }
              
             if(spelers == q)
             {
                 do
                 {
+                    spelerswaarde = 0;
                     Console.WriteLine("naam speler 1:");
                     naam1 = string.Format(Console.ReadLine());
                     Console.WriteLine("naam speler 2:");
@@ -107,7 +111,7 @@ namespace inleveropdracht_1
                     Console.WriteLine(value: "inzet speler 3: " + inzet3);
                     Console.WriteLine("wil je nog eens spelen? (y/n)");
                     doorgaan = string.Format(Console.ReadLine());
-                } while (doorgaan == "y");
+                } while (doorgaan == "y" || spelerswaarde <21);
             }
          
 
@@ -115,6 +119,7 @@ namespace inleveropdracht_1
             {
                 do
                 {
+                    spelerswaarde = 0;
                     Console.WriteLine("naam speler 1:");
                     naam1 = string.Format(Console.ReadLine());
                     Console.WriteLine("naam speler 2:");
@@ -155,7 +160,7 @@ namespace inleveropdracht_1
                     Console.WriteLine(value: "inzet speler 4: " + inzet4);
                     Console.WriteLine("wil je nog eens spelen? (y/n)");
                     doorgaan = string.Format(Console.ReadLine());
-                } while (doorgaan == "y");
+                } while (doorgaan == "y" || spelerswaarde < 21);
             }
         }
     }
