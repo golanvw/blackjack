@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace inleveropdracht_1
 {
-    class card
+    class Card
     {
 
         public string suit;
@@ -14,7 +14,7 @@ namespace inleveropdracht_1
         public int value;
 
 
-        public card(int s, int v)
+        public Card(int s, int v)
         {
             value = v; // Sets the Value of the card to the value of v (The second argument)
             switch (s) // Case statement based on the value of s

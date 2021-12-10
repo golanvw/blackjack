@@ -26,6 +26,7 @@ namespace inleveropdracht_1
             int kaarten;
             string keuze;
             int dubbel;
+            string doorgaan;
 
             Console.WriteLine("aantal spelers:");
             spelers = Int32.Parse(Console.ReadLine());

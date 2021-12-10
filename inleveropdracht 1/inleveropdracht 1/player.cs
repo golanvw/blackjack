@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace inleveropdracht_1
 {
-    class player
+    class Player
     {
         public string name;
         public int value;
-        protected List<card> Kaarten = new List<card>();
+        protected List<Card> Kaarten = new List<Card>();
 
-        public void TakeCard(List<card> deck, bool isVisible)
+        public void TakeCard(List<Card> deck, bool isVisible)
         {
 
         }

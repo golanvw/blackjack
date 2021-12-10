@@ -8,19 +8,19 @@ namespace inleveropdracht_1
 {
     class Table
     {
-        private List<player> Spelers = new List<player>();
-        private house house;
-        private List<card> Kaarten = new List<card>();
+        private List<Player> Spelers = new List<Player>();
+        private House house;
+        private List<Card> Kaarten = new List<Card>();
         
         public void AddPlayer(string name)
         {
             
         }
-        private List<card> GenerateCards()
+        private List<Card> GenerateCards()
         {
             
         }
-        private List<card> Shuffle()
+        private List<Card> Shuffle()
         {
             
         }

@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace inleveropdracht_1
 {
-    class house
+    class House
     {
-        public RevealTurnedCards()
+        public void RevealTurnedCards()
+        {
+
+        }
     }
 }

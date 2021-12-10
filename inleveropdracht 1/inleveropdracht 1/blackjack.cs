@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace inleveropdracht_1
 {
-    class blackjack
+    class Blackjack
     {
-        public table table;
+        public Table table;
         
         public void StartGame()
+        {
+
+        }
         
-        private void DealCards(List<card>)
+        private void DealCards(List<Card>)
+        {
+
+        }
     }
 }
