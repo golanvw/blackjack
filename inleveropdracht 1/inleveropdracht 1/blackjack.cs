@@ -11,11 +11,18 @@ namespace inleveropdracht_1
         public Table table;
         
         public void StartGame()
-        {
+      {
 
+            Console.WriteLine("aantal spelers:");
+            int spelers = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("aantal kaarten per spelers:");
+            int kaarten = Int32.Parse(Console.ReadLine());
+
+            table = new Table(spelers, kaarten);
         }
-        
-        private void DealCards(List<Card>)
+
+        private void DealCards(List<Card> cards)
         {
 
         }

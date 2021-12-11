@@ -12,11 +12,11 @@ namespace inleveropdracht_1
         public string suit;
         public int rank;
         public int value;
+        public int rnd;
 
-
-        public Card(int s, int v)
+        public Card(int s, int waarde)
         {
-            value = v; // Sets the Value of the card to the value of v (The second argument)
+            value = waarde; // Sets the Value of the card to the value of v (The second argument)
             switch (s) // Case statement based on the value of s
             {
                 case 1: // If s == 1, then set the Suit to Clubs
@@ -32,7 +32,7 @@ namespace inleveropdracht_1
                     suit = "♠";
                     break;
             }
-
+            
             if (value > 10)
             {
                 rank = 10;
