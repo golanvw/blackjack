@@ -53,9 +53,9 @@ namespace inleveropdracht_1
                     {
                                               
                         Console.WriteLine(naam1);
-                        Console.WriteLine("kaart:" );
-                        Console.WriteLine("inzet speler 1: " + inzet1);
-                        Console.WriteLine("inzet verdubbelen of niet? ");
+                        Console.WriteLine("Kaart:" );
+                        Console.WriteLine("Inzet speler 1: " + inzet1);
+                        Console.WriteLine("Inzet verdubbelen of niet? ");
                         keuze = string.Format(Console.ReadLine());
                         if (keuze == "verdubbelen")
                         {
@@ -64,12 +64,21 @@ namespace inleveropdracht_1
                             inzet1 = tt;
 
                         }
-                        Console.WriteLine("wil je een kaart pakken of niks doen? (k/n)");
-                        doorgaan = string.Format(Console.ReadLine());
+                        Console.WriteLine("Wil je een kaart pakken of niks doen? (k/n)");
+                        doorgaan = Console.ReadLine();
                         Console.ReadKey();
-                    } while (spelerswaarde < 21);
-                      Console.WriteLine("je hebt verloren");
-                } while (doorgaan == "k");
+                    } while (doorgaan != "n" || spelerswaarde < 21);
+                    if (spelerswaarde < 21)
+                    {
+                        Console.WriteLine("Je hebt " + spelerswaarde + " punten gehaald");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Je hebt te veel punten, dus helaas heb je verloren");
+                    }
+                    Console.WriteLine("Wil je nog een keer spelen? (y/n)");
+                    doorgaan = Console.ReadLine();
+                } while (doorgaan == "y");
                   
             }
 
@@ -78,7 +87,7 @@ namespace inleveropdracht_1
             {
                 do
                 {
-                    spelerswaarde = 333;
+                    spelerswaarde = 0;
                     Console.WriteLine("naam speler 1: ");
                     naam1 = string.Format(Console.ReadLine());
                     Console.WriteLine("inzet speler 1:");
@@ -96,9 +105,9 @@ namespace inleveropdracht_1
                         keuze = string.Format(Console.ReadLine());
                         if (keuze == "verdubbelen")
                         {
-                            int tt =inzet1 * 2;
+                            int tt = inzet1 * 2;
                             inzet1 = tt;
-                            
+
                         }
                         Console.WriteLine("wil je een kaart pakken of niks doen? (k/n)");
                         doorgaan = string.Format(Console.ReadLine());
@@ -112,16 +121,24 @@ namespace inleveropdracht_1
                         {
                             int ww = inzet1 * 2;
                             inzet2 = ww;
-                            
+
                         }
                         Console.WriteLine("wil je een kaart pakken of niks doen? (k/n)");
                         doorgaan = string.Format(Console.ReadLine());
                         Console.ReadKey();
-                    } while (spelerswaarde < 21);
-                    Console.WriteLine("je hebt verloren");
-                } while (doorgaan == "k");
+                    } while (doorgaan != "n" || spelerswaarde < 21);
+                    if (spelerswaarde < 21)
+                    {
+                        Console.WriteLine("je hebt " + spelerswaarde + " punten gehaald");
+                    }
+                    else
+                    {
+                        Console.WriteLine("je hebt te veel punten, dus helaas heb je verloren");
+                    }
+                    Console.WriteLine("wil je nog een keer spelen? (y/n)");
+                    doorgaan = Console.ReadLine();
+                } while (doorgaan == "y");
             }
-
 
             if (spelers == q)
             {
@@ -149,9 +166,9 @@ namespace inleveropdracht_1
                         keuze = string.Format(Console.ReadLine());
                         if (keuze == "verdubbelen")
                         {
-                            int tt =inzet1 * 2;
+                            int tt = inzet1 * 2;
                             inzet1 = tt;
-                            
+
                         }
                         Console.WriteLine("wil je een kaart pakken of niks doen? (k/n)");
                         doorgaan = string.Format(Console.ReadLine());
@@ -165,7 +182,7 @@ namespace inleveropdracht_1
                         {
                             int ww = inzet2 * 2;
                             inzet2 = ww;
-                            
+
                         }
                         Console.WriteLine("wil je een kaart pakken of niks doen? (k/n)");
                         doorgaan = string.Format(Console.ReadLine());
@@ -179,15 +196,25 @@ namespace inleveropdracht_1
                         {
                             int rr = inzet3 * 2;
                             inzet3 = rr;
-                            
+
                         }
                         Console.WriteLine("wil je een kaart pakken of niks doen? (k/n)");
                         doorgaan = string.Format(Console.ReadLine());
                         Console.ReadKey();
-                    } while (spelerswaarde < 21);
-                    
-                } while (doorgaan == "k");
+                    } while (doorgaan != "n" || spelerswaarde < 21);
+                    if (spelerswaarde < 21)
+                    {
+                        Console.WriteLine("je hebt " + spelerswaarde + " punten gehaald");
+                    }
+                    else
+                    {
+                        Console.WriteLine("je hebt te veel punten, dus helaas heb je verloren");
+                    }
+                    Console.WriteLine("wil je nog een keer spelen? (y/n)");
+                    doorgaan = Console.ReadLine();
+                } while (doorgaan == "y");
             }
+
 
             if (spelers == s)
             {
@@ -269,8 +296,17 @@ namespace inleveropdracht_1
                         Console.WriteLine("wil je een kaart pakken of niks doen? (k/n)");
                         doorgaan = string.Format(Console.ReadLine());
                         Console.ReadKey();
-                    } while (spelerswaarde < 21);
-                   
+                    } while (doorgaan != "n" || spelerswaarde < 21);
+                    if (spelerswaarde < 21)
+                    {
+                        Console.WriteLine("je hebt " + spelerswaarde + " punten gehaald");
+                    }
+                    else
+                    {
+                        Console.WriteLine("je hebt te veel punten, dus helaas heb je verloren");
+                    }
+                    Console.WriteLine("wil je nog een keer spelen? (y/n)");
+                    doorgaan = Console.ReadLine();
                 } while (doorgaan == "y");
             }
         }
