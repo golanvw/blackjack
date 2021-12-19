@@ -27,12 +27,46 @@ namespace inleveropdracht_1
             }
         }
         
+        public void AddPlayer(string name)
+        {
+
+
+        }
+        
+        
+        
         private void GenerateCards()
         {
+            
+            string[] suits = new string[] { "Harten", "Schoppen", "Klaver", "Ruiten" };
+            string[] ranks = new string[] { "1", "2", "3", "4", "5", "6","7","8","9","10"};
+
+
+            for (int i = 0; i < suits.Length; i++) {
+                for (int j = 0; j < ranks.Length; j++) {
+                    deck.Add(new Card (ranks[j], suits[i]));
+                                       
+                }
+                
+            
+            }  
             
         }
         private void Shuffle()
         {
+            var rrr = new Random();
+            for (int i = 0; 1<9000; i++ )
+            {
+                var kaart = deck[rrr.Next(0, deck.Count())];
+                deck.Remove(kaart);
+                deck.Insert(0, kaart);
+
+            }
+            
+            
+            
+            
+            
             
         }
     }
